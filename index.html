@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"
+    />
+  </head>
+  <body>
+    <main class="container my-3">
+      <h2 class="today"></h2>
+      <h2 class="clock">AM 00:00:00</h2>
+      <form id="create-form" class="hidden">
+        <div id="create-name">
+          <input type="text" placeholder="Enter your name" />
+        </div>
+        <div id="create-password1">
+          <input type="password" placeholder="Enter your password" />
+        </div>
+        <div id="create-password2">
+          <input type="password" placeholder="Enter your password again" />
+          <button>Create Account</button>
+        </div>
+      </form>
+      <form id="login-form" class="hidden">
+        <div id="login-name">
+          <input type="text" placeholder="Enter your name" />
+        </div>
+        <div id="login-password">
+          <input type="password" placeholder="Enter your password" />
+          <button>Log In</button>
+        </div>
+      </form>
+      <br />
+      <button id="create-new" class="hidden">Create new Account</button>
+      <h1 id="greeting" class="hidden"></h1>
+      <form id="todo-form" class="hidden">
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+      <ul id="todo-list" class="hidden"></ul>
+      <div id="weather">
+        <h2>
+          <span id="city"></span>
+          <span id="temp"></span>
+        </h2>
+      </div>
+    </main>
+
+    <img class="background" />
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>

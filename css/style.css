@@ -1,0 +1,33 @@
+.logout {
+  position: relative;
+  left: 70px;
+}
+
+#city {
+  position: absolute;
+  right: 200px;
+  top: 50px;
+  font-size: 30px;
+}
+
+#temp {
+  position: absolute;
+  right: 200px;
+  top: 150px;
+  font-size: 25px;
+}
+.hidden {
+  display: none;
+}
+
+img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+  opacity: 80%;
+}
